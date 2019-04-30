@@ -21,7 +21,10 @@
     },
 
     ['Phase 1',
-        { name: "Captain America: The First Avenger", wave: "x=..x|" },
+        { name: "Captain America: The First Avenger",
+            wave: "x=..x|",
+            node: '....h',
+        },
 
         { name: "Iron Man", wave: "xxxxx|xx|=x" },
 
@@ -29,15 +32,24 @@
         { name: "The Incredible Hulk", wave: "xxxxx|xx|x=x" },
         { name: "Thor", wave: "xxxxx|xx|x=x" },
 
-        { name: "The Avengers", wave: "xxxxx|xx|xx=x" },
+        { name: "The Avengers",
+            wave: "xxxxx|xx|xx=x",
+            node: "............b",
+        },
     ],
     ['Phase 2',
         { name: "Iron Man 3", wave: "xxxxx|xx|xx=x" },
 
-        { name: "Thor: The Dark World", wave: "xxxxx|xx|xxx=x" },
+        { name: "Thor: The Dark World",
+            wave: "xxxxx|xx|xxx=x",
+            node: "............d",
+        },
 
         { name: "Captain America: The Winter Soldier", wave: "xxxxx|xx|xxxx=x" },
-        { name: "Guardians of the Galaxy", wave: "xxxxx|xx|xxxx=x" },
+        { name: "Guardians of the Galaxy",
+            wave: "xxxxx|xx|xxxx=x",
+            node: ".............e.",
+        },
 
         { name: "Avengers: Age of Ultron", wave: "xxxxx|xx|xxxxx=x" },
         { name: "Ant-Man", wave: "xxxxx|xx|xxxxx=x" },
@@ -57,8 +69,31 @@
 
         { name: "Captain Marvel", wave: "xxxxx|=x" },
 
-        { name: "Avengers: Endgame", wave: "xxxxx|xx|xxxxxxxxxx|=x" },
+        { name: "Avengers: Endgame",
+            wave: "xxxxx|xx|xxxxxxxxxx|=x",
+            node: "....................ag",
+        },
     ],
+],
+edge: [
+    'a~>b',
+    'b~>a',
+
+    'b~>c to shield',
+    'c~>a',
+
+    'a~>d',
+    'd~>a',
+
+    'a~>e',
+    'e~>a',
+
+    'e~>a',
+
+    'e~>f to vormir',
+    'f~>a',
+
+    'g~>h',
 ],
 head: { text: "MCU", },
 }
