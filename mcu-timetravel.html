@@ -9,9 +9,10 @@
 <script type="WaveDrom">
 { signal: [
     { name: "year",
-        wave: "=====|==|==========|==",
+        wave: "=====|==|==|==========|==",
         data: [
             "1942", "1943", "1944", "1945", "1946",
+            "1970", "1971",
             "1995", "1996",
             "2010", "2011", "2012", "2013",
             "2014", "2015", "2016", "2017",
@@ -26,60 +27,64 @@
             node: '....h',
         },
 
-        { name: "Iron Man", wave: "xxxxx|xx|=x" },
+        { name: "Iron Man", wave: "xxxxx|xx|xx|=x" },
 
-        { name: "Iron Man 2", wave: "xxxxx|xx|x=x" },
-        { name: "The Incredible Hulk", wave: "xxxxx|xx|x=x" },
-        { name: "Thor", wave: "xxxxx|xx|x=x" },
+        { name: "Iron Man 2", wave: "xxxxx|xx|xx|x=x" },
+        { name: "The Incredible Hulk", wave: "xxxxx|xx|xx|x=x" },
+        { name: "Thor", wave: "xxxxx|xx|xx|x=x" },
 
         { name: "The Avengers",
-            wave: "xxxxx|xx|xx=x",
-            node: "............b",
+            wave: "xxxxx|xx|xx|xx=x",
+            node: "...............b",
         },
     ],
     ['Phase 2',
-        { name: "Iron Man 3", wave: "xxxxx|xx|xx=x" },
+        { name: "Iron Man 3", wave: "xxxxx|xx|xx|xx=x" },
 
         { name: "Thor: The Dark World",
-            wave: "xxxxx|xx|xxx=x",
-            node: "............d",
+            wave: "xxxxx|xx|xx|xxx=x",
+            node: "...............d",
         },
 
-        { name: "Captain America: The Winter Soldier", wave: "xxxxx|xx|xxxx=x" },
+        { name: "Captain America: The Winter Soldier", wave: "xxxxx|xx|xx|xxxx=x" },
         { name: "Guardians of the Galaxy",
-            wave: "xxxxx|xx|xxxx=x",
-            node: ".............e.",
+            wave: "xxxxx|xx|xx|xxxx=x",
+            node: "................e.",
         },
 
-        { name: "Avengers: Age of Ultron", wave: "xxxxx|xx|xxxxx=x" },
-        { name: "Ant-Man", wave: "xxxxx|xx|xxxxx=x" },
+        { name: "Avengers: Age of Ultron", wave: "xxxxx|xx|xx|xxxxx=x" },
+        { name: "Ant-Man", wave: "xxxxx|xx|xx|xxxxx=x" },
     ],
     ['Phase 3',
-        { name: "Guardians of the Galaxy Vol.2", wave: "xxxxx|xx|xxxx=x" },
+        { name: "Guardians of the Galaxy Vol.2", wave: "xxxxx|xx|xx|xxxx=x" },
 
-        { name: "Captain America: Civil War", wave: "xxxxx|xx|xxxxxx=x" },
-        { name: "Spider-Man: Homecoming", wave: "xxxxx|xx|xxxxxx=x" },
+        { name: "Captain America: Civil War", wave: "xxxxx|xx|xx|xxxxxx=x" },
+        { name: "Spider-Man: Homecoming", wave: "xxxxx|xx|xx|xxxxxx=x" },
 
-        { name: "Doctor Strange", wave: "xxxxx|xx|xxxxxx=.x" },
+        { name: "Doctor Strange", wave: "xxxxx|xx|xx|xxxxxx=.x" },
 
-        { name: "Black Panther", wave: "xxxxx|xx|xxxxxxx=x" },
-        { name: "Thor: Ragnarok", wave: "xxxxx|xx|xxxxxxx=x" },
-        { name: "Ant-Man & the Wasp", wave: "xxxxx|xx|xxxxxxx=x" },
-        { name: "Avengers: Infinity War", wave: "xxxxx|xx|xxxxxxx=x" },
+        { name: "Black Panther", wave: "xxxxx|xx|xx|xxxxxxx=x" },
+        { name: "Thor: Ragnarok", wave: "xxxxx|xx|xx|xxxxxxx=x" },
+        { name: "Ant-Man & the Wasp", wave: "xxxxx|xx|xx|xxxxxxx=x" },
+        { name: "Avengers: Infinity War", wave: "xxxxx|xx|xx|xxxxxxx=x" },
 
-        { name: "Captain Marvel", wave: "xxxxx|=x" },
+        { name: "Captain Marvel", wave: "xxxxx|xx|=x" },
 
         { name: "Avengers: Endgame",
-            wave: "xxxxx|xx|xxxxxxxxxx|=x",
-            node: "....................ag",
+            wave: "xxxxx|xx|xx|xxxxxxxxxx|=x",
+            node: ".......................ag",
         },
     ],
+    {
+        wave: "xxxxx|=x",
+        node: "......c",
+    },
 ],
 edge: [
     'a~>b',
     'b~>a',
 
-    'b~>c to shield',
+    'b~>c',
     'c~>a',
 
     'a~>d',
