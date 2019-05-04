@@ -5,4 +5,4 @@ Currently, it has some example diagrams using the [wavedrom library](https://wav
 
 - Marvel Cinematic Universe
     - [Timeline](mcu.html)
-    - [Timeline with Timetravel](mcu-timetravel.html)
+    - [Timeline with Timetravel](mcu-timetravel.html) (contains movie spoilers)
